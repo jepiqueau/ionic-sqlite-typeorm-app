@@ -1,0 +1,7 @@
+{
+  "name": "ionic-sqlite-typeorm-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
