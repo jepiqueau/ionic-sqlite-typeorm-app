@@ -1,0 +1,16 @@
+<ion-list>
+  <ion-list-header>
+    Categories
+  </ion-list-header>
+
+  <ion-item lines="inset" *ngFor="let data of categoryList">
+    <ion-label>
+      <h2 id="category_name">{{data.name}}</h2>
+    </ion-label>
+
+    <div class="item-category" item-end>
+      <ion-icon name="create" style="zoom:2.0" (click)="updateCategory(data)"></ion-icon>
+      <ion-icon name="trash" style="zoom:2.0" (click)="deleteCategory(data)"></ion-icon>
+    </div>
+  </ion-item>
+</ion-list>

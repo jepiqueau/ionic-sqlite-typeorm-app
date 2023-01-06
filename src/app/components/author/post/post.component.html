@@ -1,0 +1,63 @@
+<ion-list lines="full">
+
+  <form *ngIf="isForm" [formGroup]="postForm" (ngSubmit)="onSubmit()">
+    <div id="post-cmp-fg-categories" formGroupName="fg_categories">
+      <ion-item>
+        <ion-label color='primary'>Category</ion-label>
+        <div class="item-category" item-end>
+          <ion-icon name="create" style="zoom:2.0"  (click)="addCategory()"></ion-icon>
+          <ion-icon name="list" style="zoom:2.0"  (click)="listCategory()"></ion-icon>
+        </div>
+      </ion-item>
+      <ion-item>
+        <ion-select id="post-cmp-categories"
+          placeholder="Select Category(ies)"
+          multiple="true"
+          formControlName="categories"
+          (ionChange)="handleChangeCategory()"
+          cancelText="Cancel"
+          okText="OK"
+          required
+          >
+          <ion-select-option *ngFor="let category of categoryList" [value]="category">{{category.name}}</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div formGroupName="fg_author">
+      <ion-item>
+        <ion-label color='primary'>Author</ion-label>
+        <div class="item-author" item-end>
+          <ion-icon name="create" style="zoom:2.0" (click)="addAuthor()"></ion-icon>
+          <ion-icon name="list" style="zoom:2.0"  (click)="listAuthor()"></ion-icon>
+        </div>
+      </ion-item>
+      <ion-item>
+        <ion-select id="post-cmp-author"
+          placeholder="Select Author"
+          formControlName="author"
+          cancelText="Cancel"
+          okText="OK"
+          required>
+          <ion-select-option *ngFor="let author of authorList" [value]="author">{{author.email}}</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div formGroupName="fg_post">
+      <ion-item>
+        <ion-label position="floating" color="primary">title</ion-label>
+        <ion-input id="post-cmp-title" type="text" formControlName="title" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" color="primary">content</ion-label>
+        <ion-textarea id="post-cmp-text" placeholder="Type post content" type="text" formControlName="text" required></ion-textarea>
+      </ion-item>
+    </div>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="primary" shape="full" expand="block" [disabled]="!postForm.valid">
+          Submit
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-list>

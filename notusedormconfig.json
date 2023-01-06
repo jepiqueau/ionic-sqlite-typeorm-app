@@ -1,0 +1,22 @@
+{
+    "type": "capacitor",
+    "database": "ionic-sqlite-author",
+    "mode": "no-encryption",
+    "synchronize": false,
+    "migrationRun": true,
+    "logging": false,
+    "entities": [
+      "src/app/entities/**/*.ts"
+    ],
+    "subscribers": [
+      "src/app/subscribers/**/*.ts"
+    ],
+    "migrations": [
+      "src/app/migrations/**/*.ts"
+    ],
+    "cli": {
+      "entitiesDir": "src/app/entities",
+      "migrationsDir": "src/app/migrations",
+      "subscribersDir": "src/app/subscribers"
+    }
+}

@@ -1,0 +1,16 @@
+<ion-list>
+  <ion-list-header>
+    Authors
+  </ion-list-header>
+
+  <ion-item lines="inset" *ngFor="let data of authorList">
+    <ion-label>
+      <h2 id="author_email_name">{{data.email}} - {{data.name}}</h2>
+    </ion-label>
+
+    <div class="item-author" item-end>
+      <ion-icon name="create" style="zoom:2.0" (click)="updateAuthor(data)"></ion-icon>
+      <ion-icon name="trash" style="zoom:2.0" (click)="deleteAuthor(data)"></ion-icon>
+    </div>
+  </ion-item>
+</ion-list>

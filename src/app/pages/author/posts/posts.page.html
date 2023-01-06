@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="medium" (click)="close()">Close</ion-button>
+    </ion-buttons>
+    <ion-title>Post List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <cmp-post id="posts-cmp-post" [inPost]="updPost" class="hidden" (outPostEvent)="handleOutPost($event)"></cmp-post>
+  <cmp-posts id="posts-cmp-posts" (toUpdatePost)="handleToUpdatePost($event)"></cmp-posts>
+</ion-content>

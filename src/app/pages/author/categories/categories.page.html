@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="medium" (click)="close()">Close</ion-button>
+    </ion-buttons>
+    <ion-title>Category List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <cmp-category id="categories-cmp-category" [inCategory]="updCategory" class="hidden" (outCategoryEvent)="handleOutCategory($event)"></cmp-category>
+  <cmp-categories (toUpdateCategory)="handleToUpdateCategory($event)"></cmp-categories>
+</ion-content>

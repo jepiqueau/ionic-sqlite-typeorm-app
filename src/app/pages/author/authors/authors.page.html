@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="medium" (click)="close()">Close</ion-button>
+    </ion-buttons>
+    <ion-title>Author List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <cmp-author id="authors-cmp-author" [inAuthor]="updAuthor" class="hidden" (outAuthorEvent)="handleOutAuthor($event)"></cmp-author>
+  <cmp-authors (toUpdateAuthor)="handleToUpdateAuthor($event)"></cmp-authors>
+</ion-content>

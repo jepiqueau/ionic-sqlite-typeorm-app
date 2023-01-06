@@ -1,0 +1,19 @@
+ion-select {
+  --placeholder-color: #c32525;
+  --placeholder-opacity: 1;
+}
+ion-select::part(placeholder)::first-letter {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+ion-select::part(text) {
+  color: #d4d5d7;
+}
+
+ion-select::part(icon) {
+  color: #c32525;
+  opacity: 1;
+  width: 20px;
+  height: 28px;
+}

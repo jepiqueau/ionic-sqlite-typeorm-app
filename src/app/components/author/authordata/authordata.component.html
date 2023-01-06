@@ -1,0 +1,14 @@
+<ion-list>
+  <ion-list-header>
+    Author Data
+  </ion-list-header>
+
+  <ion-item lines="inset" *ngFor="let data of authorsData">
+    <ion-label>
+      <h2 id="author_name">{{data.author}}</h2>
+      <h5>{{data.title}}</h5>
+      <p>{{data.categories}}</p>
+    </ion-label>
+
+  </ion-item>
+</ion-list>
