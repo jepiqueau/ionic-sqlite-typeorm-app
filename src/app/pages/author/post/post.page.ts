@@ -33,7 +33,6 @@ export class PostPage implements OnInit {
    * @returns
    */
   async handleOutPost(post:Post) {
-    console.log(`in post.page post: ${JSON.stringify(post)}`)
     if(post && post.id > 0) {
       const postJson: PostJson = this.authorPostService.getJsonFromPost(post);
       try {

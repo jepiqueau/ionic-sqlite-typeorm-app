@@ -36,16 +36,23 @@ git remote rm origin
 
  - then install it
 
-```bash
-npm install
-```
+  ```bash
+  npm install
 
-the capacitor config parameters are:
+  ```
 
-```
-  "appId": "com.jeep.app.ionic.angular.typeorm",
-  "appName": "ionic-sqlite-typeorm-app",
-```
+ - if you use the Electron platform
+
+  ```bash
+  npm run electron:install
+  ```
+
+ - the capacitor config parameters are:
+
+  ```
+    "appId": "com.jeep.app.ionic.angular.typeorm",
+    "appName": "ionic-sqlite-typeorm-app",
+  ```
 
 ### Requirements for running TypeOrm
 
@@ -120,9 +127,6 @@ the capacitor config parameters are:
     ```
 
 
-
-
-
 ### Building Web Code
 
  - development
@@ -142,12 +146,11 @@ the capacitor config parameters are:
   npm run build:web
   ````
 
-### Building Native Project
+### Building Native Project with standard procedure
 
 ```bash
 npm run build:native
 npx cap sync
-npm run build:native
 npx cap copy
 ```
 
@@ -163,7 +166,31 @@ Once Android Studio launches, you can build your app through the standard Androi
 ```bash
 npx cap open ios
 ```
+Once Xcode launches, you can build your app through the standard Xcode workflow.
 
+### Building Native Project with Ionic Cli
+
+### Android
+
+```bash
+npm run ionic:android
+```
+
+Once Android Studio launches, you can build your app through the standard Android Studio workflow.
+
+### iOS
+
+```bash
+npm run ionic:ios
+```
+
+Once Xcode launches, you can build your app through the standard Xcode workflow.
+
+### Building Electron Project
+
+```bash
+npm run electron:start
+```
 
 ## Contributors ✨
 
