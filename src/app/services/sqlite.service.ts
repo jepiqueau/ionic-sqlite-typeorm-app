@@ -19,6 +19,17 @@ export class SQLiteService {
       this.sqliteConnection = new SQLiteConnection(this.sqlitePlugin);
       this.isService = true;
     }
+
+    async initializeWebStore() {
+      if(this.platform === 'web') {
+        try {
+          await this.sqliteConnection.initWebStore();
+        } catch (err) {
+          console.log(`Error: ${err}`);
+          throw new Error(`Error: ${err}`)
+        }
+      }
+    }
     /**
      * Get the Sqlite Plugin
      * @returns

@@ -1,6 +1,6 @@
 {
   "name": "ionic-sqlite-typeorm-app",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Ionic/Angular SQLite TypeORM Application",
   "author": "Jean Pierre Quéau",
   "license": "MIT",
