@@ -1,6 +1,6 @@
 {
   "name": "ionic-sqlite-typeorm-app",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Ionic/Angular SQLite TypeORM Application",
   "author": "Jean Pierre Quéau",
   "license": "MIT",
@@ -20,7 +20,8 @@
     "ionic:android": "npm run remove:sql:wasm && ionic capacitor build android",
     "electron:install": "cd electron && npm install && cd ..",
     "electron:prepare": "npm run remove:sql:wasm && ng build && npx cap sync @capacitor-community/electron && npx cap copy @capacitor-community/electron",
-    "electron:start": "npm run electron:prepare && cd electron && npm run electron:start"
+    "electron:start": "npm run electron:prepare && cd electron && npm run electron:start",
+    "postinstall": "bash ./scripts/patch.sh"
   },
   "private": true,
   "dependencies": {
@@ -45,10 +46,11 @@
     "@ionic/angular": "^6.1.9",
     "@ionic/pwa-elements": "^3.1.1",
     "ionicons": "^6.0.3",
+    "jeep-sqlite": "^1.7.1",
     "path": "^0.12.7",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
-    "typeorm": "^0.3.11",
+    "typeorm": "^0.3.12",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {

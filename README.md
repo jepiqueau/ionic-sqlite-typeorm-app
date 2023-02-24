@@ -127,7 +127,7 @@ git remote rm origin
     ```
 
 
-### Building Web Code
+### Building Web Project
 
  - development
    - angular cli
@@ -154,31 +154,41 @@ npx cap sync
 npx cap copy
 ```
 
-#### Android
+#### - Android
 
 ```bash
 npx cap open android
 ```
-Once Android Studio launches, you can build your app through the standard Android Studio workflow.
 
-### iOS
+Once Android Studio launches, make sure that you are using 
+ - Gradle JDK version 11
+ - Android Gradle Plugin Version 7.2.2
+
+and build your app through the standard Android Studio workflow.
+
+#### - iOS
 
 ```bash
 npx cap open ios
 ```
+
 Once Xcode launches, you can build your app through the standard Xcode workflow.
 
 ### Building Native Project with Ionic Cli
 
-### Android
+#### - Android
 
 ```bash
 npm run ionic:android
 ```
 
-Once Android Studio launches, you can build your app through the standard Android Studio workflow.
+Once Android Studio launches, make sure that you are using 
+ - Gradle JDK version 11
+ - Android Gradle Plugin Version 7.2.2
 
-### iOS
+and build your app through the standard Android Studio workflow.
+
+#### - iOS
 
 ```bash
 npm run ionic:ios

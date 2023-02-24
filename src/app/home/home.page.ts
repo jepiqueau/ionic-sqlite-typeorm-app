@@ -48,6 +48,7 @@ export class HomePage implements OnInit{
   async initOrmService() {
     try {
       await this.ormService.initialize();
+      console.log(`*** ORM service has been initialized ***`)
     } catch(err: any) {
       const msg = err.message ? err.message : err
       throw new Error(`Error: ${msg}`);

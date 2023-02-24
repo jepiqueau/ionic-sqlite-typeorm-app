@@ -27,17 +27,21 @@ export class OrmService {
         if (!dataSource.isInitialized) {
           // initialize the DataSource
           await dataSource.initialize();
+          console.log(`*** dataSource has been initialized ***`)
           // run the migrations
           await dataSource.runMigrations();
+          console.log(`*** dataSource runMigration has been run succesfully ***`)
           // load the data for this datasource
           if (database.includes('author')) {
             this.authorPostService.database = database;
             this.authorPostService.dataSource = dataSource;
             await this.authorPostService.initialize();
+            console.log(`*** authorPostService has been initialized ***`)
           }
           if (this.sqliteService.getPlatform() === 'web') {
             // save the databases from memory to store
             await this.sqliteService.getSqliteConnection().saveToStore(database);
+            console.log(`*** inORMService saveToStore ***`)
           }
 
         }

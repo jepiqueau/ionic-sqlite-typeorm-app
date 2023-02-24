@@ -57,8 +57,6 @@ export class PostsPage implements OnInit {
           // save the databases from memory to store
           await this.sqliteService.getSqliteConnection().saveToStore(this.authorPostService.database);
         }
-        this.postEL.classList.add('hidden');
-        this.postsEL.classList.remove('hidden');
       } catch (err: any) {
         const msg = err.message ? err.message : err;
         console.log(`onSubmit Update Post: ${err}`);
@@ -66,6 +64,9 @@ export class PostsPage implements OnInit {
           text: `onSubmit Update Post: ${err} `,
           duration: 'long'
         });
+      } finally {
+        this.postEL.classList.add('hidden');
+        this.postsEL.classList.remove('hidden');
       }
     } else {
       await Toast.show({

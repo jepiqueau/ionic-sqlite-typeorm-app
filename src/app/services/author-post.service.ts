@@ -33,11 +33,13 @@ export class AuthorPostService {
    * @returns
    */
   async initialize(): Promise<void> {
+    console.log(`@@@ this.dataSource.isInitialized: ${this.dataSource.isInitialized} @@@@`)
     if (this.dataSource.isInitialized) {
       this.postRepository = this.dataSource.getRepository(Post);
       this.authorRepository = this.dataSource.getRepository(Author);
       this.categoryRepository = this.dataSource.getRepository(Category);
       const authorCount = await this.getAuthorCount();
+      console.log(`@@@ authorCount: ${authorCount} @@@@`)
       if(authorCount === 0) {
         // create authors
         for (const author of MOCK_AUTHORS) {
@@ -48,6 +50,7 @@ export class AuthorPostService {
             return Promise.reject(`Error AuthorPostService initialize: ${msg}`);
           }
         }
+        console.log(`@@@ after create authors @@@@`)
         // create categories
         for (const category of MOCK_CATEGORIES) {
           try {
@@ -57,6 +60,7 @@ export class AuthorPostService {
             return Promise.reject(`Error AuthorPostService initialize: ${msg}`);
           }
         }
+        console.log(`@@@ after create categories @@@@`)
         // create posts
         for (const post of MOCK_POSTS) {
           try {
@@ -67,6 +71,7 @@ export class AuthorPostService {
           }
         }
       }
+      console.log(`@@@ after create posts @@@@`)
       try {
         this.getAllCategories().then(() => {
           this.isCategoryReady.next(true);
