@@ -1,15 +1,15 @@
-import { Component, OnInit, Input, Output, EventEmitter, SimpleChanges } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, SimpleChanges, OnChanges } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 import { AuthorPostService } from 'src/app/services/author-post.service';
 import { IdsSeq, AuthorJson } from 'src/app/models/authorData';
 import { Author } from 'src/app/entities/author/author';
 
 @Component({
-  selector: 'cmp-author',
+  selector: 'app-cmp-author',
   templateUrl: './author.component.html',
   styleUrls: ['./author.component.scss'],
 })
-export class AuthorComponent implements OnInit {
+export class AuthorComponent implements OnInit, OnChanges {
   @Input() inAuthor!: Author;
   @Output() outAuthorEvent = new EventEmitter<Author>();
 

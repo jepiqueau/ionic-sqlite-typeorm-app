@@ -3,6 +3,15 @@ var TerserPlugin = require('terser-webpack-plugin')
 
 console.log('The custom config is used');
 module.exports = {
+  resolve: {
+    extensions: ['.ts', '.js'],
+    fallback: {
+      "crypto": false,
+    },
+  },
+  externals: {
+    'react-native-sqlite-storage': 'commonjs react-native-sqlite-storage'
+  },
   optimization: {
     minimize: true,
     minimizer: [

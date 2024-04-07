@@ -10,6 +10,8 @@ import { Category } from '../entities/author/category';
 import { Post } from '../entities/author/post';
 import { PostPage } from 'src/app/pages/author/post/post.page';
 import { PostsPage } from 'src/app/pages/author/posts/posts.page';
+import { addIcons } from 'ionicons';
+import { create, list } from 'ionicons/icons';
 
 @Component({
   selector: 'app-home',
@@ -30,6 +32,7 @@ export class HomePage implements OnInit{
 
   constructor(private ormService: OrmService,
     private modalCtrl: ModalController) {
+      addIcons({ create, list });
   }
   ngOnInit(): void {
 

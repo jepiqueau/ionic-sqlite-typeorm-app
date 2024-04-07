@@ -1,9 +1,11 @@
 import { Component, OnInit, Output, EventEmitter  } from '@angular/core';
 import { AuthorPostService } from 'src/app/services/author-post.service';
 import { Post } from 'src/app/entities/author/post';
+import { addIcons } from 'ionicons';
+import { create, trash } from 'ionicons/icons';
 
 @Component({
-  selector: 'cmp-posts',
+  selector: 'app-cmp-posts',
   templateUrl: './posts.component.html',
   styleUrls: ['./posts.component.scss'],
 })
@@ -13,6 +15,7 @@ export class PostsComponent implements OnInit {
   public postList: Post[] = [];
 
   constructor(private authorPostService: AuthorPostService) {
+    addIcons({ create, trash });
   }
 
   ngOnInit() {

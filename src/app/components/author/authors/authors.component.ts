@@ -1,9 +1,11 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { AuthorPostService } from 'src/app/services/author-post.service';
 import { Author } from 'src/app/entities/author/author';
+import { addIcons } from 'ionicons';
+import { create, trash } from 'ionicons/icons';
 
 @Component({
-  selector: 'cmp-authors',
+  selector: 'app-cmp-authors',
   templateUrl: './authors.component.html',
   styleUrls: ['./authors.component.scss'],
 })
@@ -13,6 +15,7 @@ export class AuthorsComponent implements OnInit {
   public authorList: Author[] = [];
 
   constructor(private authorPostService: AuthorPostService) {
+    addIcons({create, trash});
   }
 
   ngOnInit() {

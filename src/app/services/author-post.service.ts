@@ -43,6 +43,7 @@ export class AuthorPostService {
       if(authorCount === 0) {
         // create authors
         for (const author of MOCK_AUTHORS) {
+          console.log(`author: ${JSON.stringify(author)}`)
           try {
             await this.getAuthor(author);
           } catch (err: any) {

@@ -1,0 +1,559 @@
+{
+  "version": "6.0",
+  "nxVersion": "18.2.3",
+  "deps": {
+    "@angular-builders/custom-webpack": "^17.0.1",
+    "@angular-builders/dev-server": "^7.3.1",
+    "@angular/animations": "^17.3.2",
+    "@angular/common": "^17.3.2",
+    "@angular/compiler": "^17.3.2",
+    "@angular/core": "^17.3.2",
+    "@angular/forms": "^17.3.2",
+    "@angular/platform-browser": "^17.3.2",
+    "@angular/platform-browser-dynamic": "^17.3.2",
+    "@angular/router": "^17.3.2",
+    "@capacitor-community/electron": "^5.0.1",
+    "@capacitor-community/sqlite": "^5.7.0",
+    "@capacitor/android": "^5.7.0",
+    "@capacitor/app": "5.0.7",
+    "@capacitor/core": "^5.7.0",
+    "@capacitor/haptics": "5.0.7",
+    "@capacitor/ios": "^5.7.0",
+    "@capacitor/keyboard": "5.0.8",
+    "@capacitor/status-bar": "5.0.7",
+    "@capacitor/toast": "^5.0.7",
+    "@ionic/angular": "^7.5.0",
+    "@ionic/pwa-elements": "^3.2.2",
+    "ionicons": "^7.2.1",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "typeorm": "^0.3.20",
+    "zone.js": "~0.14.2",
+    "@angular-devkit/build-angular": "^17.3.2",
+    "@angular-eslint/builder": "^17.3.0",
+    "@angular-eslint/eslint-plugin": "^17.3.0",
+    "@angular-eslint/eslint-plugin-template": "^17.3.0",
+    "@angular-eslint/schematics": "^17.3.0",
+    "@angular-eslint/template-parser": "^17.3.0",
+    "@angular/cli": "^17.3.0",
+    "@angular/compiler-cli": "^17.3.2",
+    "@angular/language-service": "^17.3.2",
+    "@capacitor/cli": "^5.7.0",
+    "@ionic/angular-toolkit": "^9.0.0",
+    "@types/jasmine": "~5.1.0",
+    "@types/node": "^20.11.16",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "copyfiles": "^2.4.1",
+    "eslint": "^7.26.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsdoc": "30.7.6",
+    "eslint-plugin-prefer-arrow": "1.2.2",
+    "jasmine-core": "~5.1.0",
+    "jasmine-spec-reporter": "~5.0.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.7.1",
+    "typescript": "~5.2.2"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": ".browserslistrc",
+        "hash": "2703871730956020951"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "6686520031028425313"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "18210278994710539225"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "91109559695469517"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "592272277800690021"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "15916670647756584179"
+      },
+      {
+        "file": "CODE_OF_CONDUCT.md",
+        "hash": "5029847922756465936"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "11732144166141791563"
+      },
+      {
+        "file": "README.md",
+        "hash": "17863615186533472720"
+      },
+      {
+        "file": "angular.json",
+        "hash": "10124695834606046241"
+      },
+      {
+        "file": "capacitor.config.ts",
+        "hash": "5763683163089736604"
+      },
+      {
+        "file": "custom.webpack.config.js",
+        "hash": "7092925081649845736"
+      },
+      {
+        "file": "ionic.config.json",
+        "hash": "9431866376297406337"
+      },
+      {
+        "file": "karma.conf.js",
+        "hash": "13719387092471133633"
+      },
+      {
+        "file": "notusedormconfig.json",
+        "hash": "9491252000381279074"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "7067033194543498808"
+      },
+      {
+        "file": "package.json",
+        "hash": "5724181897691161044"
+      },
+      {
+        "file": "scripts/patch.sh",
+        "hash": "4246225086198941239"
+      },
+      {
+        "file": "src/app/app-routing.module.ts",
+        "hash": "11577069165076447976"
+      },
+      {
+        "file": "src/app/app.component.html",
+        "hash": "12139992690072916112"
+      },
+      {
+        "file": "src/app/app.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/app.component.spec.ts",
+        "hash": "16655258543879266906"
+      },
+      {
+        "file": "src/app/app.component.ts",
+        "hash": "16325125361118922093"
+      },
+      {
+        "file": "src/app/app.module.ts",
+        "hash": "16434735863631049643"
+      },
+      {
+        "file": "src/app/components/author/author/author.component.html",
+        "hash": "4892023717687229265"
+      },
+      {
+        "file": "src/app/components/author/author/author.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/components/author/author/author.component.spec.ts",
+        "hash": "14013469623379864566"
+      },
+      {
+        "file": "src/app/components/author/author/author.component.ts",
+        "hash": "8446182853353447145"
+      },
+      {
+        "file": "src/app/components/author/authordata/authordata.component.html",
+        "hash": "3784381941739236207"
+      },
+      {
+        "file": "src/app/components/author/authordata/authordata.component.scss",
+        "hash": "15709834748494664309"
+      },
+      {
+        "file": "src/app/components/author/authordata/authordata.component.spec.ts",
+        "hash": "3916491265794114874"
+      },
+      {
+        "file": "src/app/components/author/authordata/authordata.component.ts",
+        "hash": "4752749733430169568"
+      },
+      {
+        "file": "src/app/components/author/authors/authors.component.html",
+        "hash": "10497989619759865245"
+      },
+      {
+        "file": "src/app/components/author/authors/authors.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/components/author/authors/authors.component.spec.ts",
+        "hash": "82070735754023809"
+      },
+      {
+        "file": "src/app/components/author/authors/authors.component.ts",
+        "hash": "8178821817602251689"
+      },
+      {
+        "file": "src/app/components/author/categories/categories.component.html",
+        "hash": "8176576520010009606"
+      },
+      {
+        "file": "src/app/components/author/categories/categories.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/components/author/categories/categories.component.spec.ts",
+        "hash": "13617932953471276317"
+      },
+      {
+        "file": "src/app/components/author/categories/categories.component.ts",
+        "hash": "8523223779173166195"
+      },
+      {
+        "file": "src/app/components/author/category/category.component.html",
+        "hash": "6916462791765810365"
+      },
+      {
+        "file": "src/app/components/author/category/category.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/components/author/category/category.component.spec.ts",
+        "hash": "6222626133674188342"
+      },
+      {
+        "file": "src/app/components/author/category/category.component.ts",
+        "hash": "5271983508374848728"
+      },
+      {
+        "file": "src/app/components/author/post/post.component.html",
+        "hash": "13432816659285985695"
+      },
+      {
+        "file": "src/app/components/author/post/post.component.scss",
+        "hash": "2737201165566762760"
+      },
+      {
+        "file": "src/app/components/author/post/post.component.spec.ts",
+        "hash": "10192352493429569081"
+      },
+      {
+        "file": "src/app/components/author/post/post.component.ts",
+        "hash": "7228210661264956264"
+      },
+      {
+        "file": "src/app/components/author/posts/posts.component.html",
+        "hash": "3531821921086070194"
+      },
+      {
+        "file": "src/app/components/author/posts/posts.component.scss",
+        "hash": "15709834748494664309"
+      },
+      {
+        "file": "src/app/components/author/posts/posts.component.spec.ts",
+        "hash": "11405037599622578346"
+      },
+      {
+        "file": "src/app/components/author/posts/posts.component.ts",
+        "hash": "7665561621196806348"
+      },
+      {
+        "file": "src/app/data-sources/AuthorDataSource.ts",
+        "hash": "2476470083581150470"
+      },
+      {
+        "file": "src/app/entities/author/author.ts",
+        "hash": "18107125449470506422"
+      },
+      {
+        "file": "src/app/entities/author/category.ts",
+        "hash": "10297610443514302995"
+      },
+      {
+        "file": "src/app/entities/author/post.ts",
+        "hash": "11555786249488252094"
+      },
+      {
+        "file": "src/app/home/home-routing.module.ts",
+        "hash": "15640276891962985461"
+      },
+      {
+        "file": "src/app/home/home.module.ts",
+        "hash": "13913837724752243875"
+      },
+      {
+        "file": "src/app/home/home.page.html",
+        "hash": "18170977603206302941"
+      },
+      {
+        "file": "src/app/home/home.page.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/home/home.page.spec.ts",
+        "hash": "17001972042763736139"
+      },
+      {
+        "file": "src/app/home/home.page.ts",
+        "hash": "4024518532442773518"
+      },
+      {
+        "file": "src/app/migrations/author/1671880018001-InitializeAuthorPost.ts",
+        "hash": "9912475913689936847"
+      },
+      {
+        "file": "src/app/mock-data/posts-categories-authors.ts",
+        "hash": "16027950810878158682"
+      },
+      {
+        "file": "src/app/models/authorData.ts",
+        "hash": "6069885489820309738"
+      },
+      {
+        "file": "src/app/pages/author/author/author-routing.module.ts",
+        "hash": "692419748904188349"
+      },
+      {
+        "file": "src/app/pages/author/author/author.module.ts",
+        "hash": "6500449808857009694"
+      },
+      {
+        "file": "src/app/pages/author/author/author.page.html",
+        "hash": "2794206520085275516"
+      },
+      {
+        "file": "src/app/pages/author/author/author.page.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/pages/author/author/author.page.spec.ts",
+        "hash": "17230902036945954359"
+      },
+      {
+        "file": "src/app/pages/author/author/author.page.ts",
+        "hash": "6990433932201383831"
+      },
+      {
+        "file": "src/app/pages/author/authors/authors-routing.module.ts",
+        "hash": "5878697052721605187"
+      },
+      {
+        "file": "src/app/pages/author/authors/authors.module.ts",
+        "hash": "12984150383269985118"
+      },
+      {
+        "file": "src/app/pages/author/authors/authors.page.html",
+        "hash": "3272552701668456930"
+      },
+      {
+        "file": "src/app/pages/author/authors/authors.page.scss",
+        "hash": "6993385555649467178"
+      },
+      {
+        "file": "src/app/pages/author/authors/authors.page.spec.ts",
+        "hash": "8284800819257972184"
+      },
+      {
+        "file": "src/app/pages/author/authors/authors.page.ts",
+        "hash": "9698561141159333954"
+      },
+      {
+        "file": "src/app/pages/author/categories/categories-routing.module.ts",
+        "hash": "14017982064149278115"
+      },
+      {
+        "file": "src/app/pages/author/categories/categories.module.ts",
+        "hash": "60413732249276791"
+      },
+      {
+        "file": "src/app/pages/author/categories/categories.page.html",
+        "hash": "3239119677479811607"
+      },
+      {
+        "file": "src/app/pages/author/categories/categories.page.scss",
+        "hash": "6993385555649467178"
+      },
+      {
+        "file": "src/app/pages/author/categories/categories.page.spec.ts",
+        "hash": "7155092770095949162"
+      },
+      {
+        "file": "src/app/pages/author/categories/categories.page.ts",
+        "hash": "7200704245709101777"
+      },
+      {
+        "file": "src/app/pages/author/category/category-routing.module.ts",
+        "hash": "13312272630563804416"
+      },
+      {
+        "file": "src/app/pages/author/category/category.module.ts",
+        "hash": "5224409761246538542"
+      },
+      {
+        "file": "src/app/pages/author/category/category.page.html",
+        "hash": "8862582666612048104"
+      },
+      {
+        "file": "src/app/pages/author/category/category.page.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/pages/author/category/category.page.spec.ts",
+        "hash": "12703902777166203477"
+      },
+      {
+        "file": "src/app/pages/author/category/category.page.ts",
+        "hash": "8292588906356447861"
+      },
+      {
+        "file": "src/app/pages/author/post/post-routing.module.ts",
+        "hash": "17402642437939667796"
+      },
+      {
+        "file": "src/app/pages/author/post/post.module.ts",
+        "hash": "11060384877661567703"
+      },
+      {
+        "file": "src/app/pages/author/post/post.page.html",
+        "hash": "17288516387624019827"
+      },
+      {
+        "file": "src/app/pages/author/post/post.page.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/pages/author/post/post.page.spec.ts",
+        "hash": "16798786965970036889"
+      },
+      {
+        "file": "src/app/pages/author/post/post.page.ts",
+        "hash": "596353321024364126"
+      },
+      {
+        "file": "src/app/pages/author/posts/posts-routing.module.ts",
+        "hash": "6395916555736453063"
+      },
+      {
+        "file": "src/app/pages/author/posts/posts.module.ts",
+        "hash": "490369041093419483"
+      },
+      {
+        "file": "src/app/pages/author/posts/posts.page.html",
+        "hash": "2216258482073573677"
+      },
+      {
+        "file": "src/app/pages/author/posts/posts.page.scss",
+        "hash": "12099264728010052378"
+      },
+      {
+        "file": "src/app/pages/author/posts/posts.page.spec.ts",
+        "hash": "4161942050238228454"
+      },
+      {
+        "file": "src/app/pages/author/posts/posts.page.ts",
+        "hash": "345606800968446025"
+      },
+      {
+        "file": "src/app/services/author-post.service.ts",
+        "hash": "18097880825755261117"
+      },
+      {
+        "file": "src/app/services/orm.service.ts",
+        "hash": "809215866946796778"
+      },
+      {
+        "file": "src/app/services/sqlite.service.ts",
+        "hash": "3636380098822134266"
+      },
+      {
+        "file": "src/app/shared/components/author/author.shared.module.ts",
+        "hash": "18229093711154648763"
+      },
+      {
+        "file": "src/app/shared/components/author/category.shared.module.ts",
+        "hash": "12034743486415727954"
+      },
+      {
+        "file": "src/app/shared/components/author/post.shared.module.ts",
+        "hash": "11123902857439114941"
+      },
+      {
+        "file": "src/assets/icon/favicon.png",
+        "hash": "17482944836898362639"
+      },
+      {
+        "file": "src/assets/shapes.svg",
+        "hash": "4708889011185296100"
+      },
+      {
+        "file": "src/assets/sql-wasm.wasm",
+        "hash": "29174459794649915"
+      },
+      {
+        "file": "src/environments/environment.prod.ts",
+        "hash": "5406836414239361753"
+      },
+      {
+        "file": "src/environments/environment.ts",
+        "hash": "17458466784506237106"
+      },
+      {
+        "file": "src/global.scss",
+        "hash": "3871764962445315233"
+      },
+      {
+        "file": "src/index.html",
+        "hash": "5962093970713772175"
+      },
+      {
+        "file": "src/main.ts",
+        "hash": "3796211793984438555"
+      },
+      {
+        "file": "src/polyfills.ts",
+        "hash": "2035846685621806592"
+      },
+      {
+        "file": "src/test.ts",
+        "hash": "12412031923219697029"
+      },
+      {
+        "file": "src/theme/variables.scss",
+        "hash": "4180681664411398942"
+      },
+      {
+        "file": "src/zone-flags.ts",
+        "hash": "3323586086306676158"
+      },
+      {
+        "file": "tsconfig.app.json",
+        "hash": "18339327656359401161"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "13634318175860984405"
+      },
+      {
+        "file": "tsconfig.spec.json",
+        "hash": "17198424518534092990"
+      }
+    ]
+  }
+}

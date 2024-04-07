@@ -1,9 +1,11 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { AuthorPostService } from 'src/app/services/author-post.service';
 import { Category } from 'src/app/entities/author/category';
+import { addIcons } from 'ionicons';
+import { create, trash } from 'ionicons/icons';
 
 @Component({
-  selector: 'cmp-categories',
+  selector: 'app-cmp-categories',
   templateUrl: './categories.component.html',
   styleUrls: ['./categories.component.scss'],
 })
@@ -13,7 +15,8 @@ export class CategoriesComponent implements OnInit {
   public categoryList: Category[] = [];
 
   constructor(private authorPostService: AuthorPostService) {
-    }
+    addIcons({create, trash});
+  }
 
   ngOnInit() {
     try {

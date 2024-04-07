@@ -11,14 +11,12 @@ import { Toast } from '@capacitor/toast';
   templateUrl: './post.page.html',
   styleUrls: ['./post.page.scss'],
 })
-export class PostPage implements OnInit {
+export class PostPage {
 
   constructor(private authorPostService: AuthorPostService,
     private sqliteService: SQLiteService,
     private modalCtrl: ModalController) { }
 
-  ngOnInit() {
-  }
   // Private functions
   /**
    * Cancel

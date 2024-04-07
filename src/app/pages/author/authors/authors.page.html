@@ -8,6 +8,6 @@
 </ion-header>
 
 <ion-content>
-  <cmp-author id="authors-cmp-author" [inAuthor]="updAuthor" class="hidden" (outAuthorEvent)="handleOutAuthor($event)"></cmp-author>
-  <cmp-authors (toUpdateAuthor)="handleToUpdateAuthor($event)"></cmp-authors>
+  <app-cmp-author id="authors-cmp-author" [inAuthor]="updAuthor" class="hidden" (outAuthorEvent)="handleOutAuthor($event)"></app-cmp-author>
+  <app-cmp-authors (toUpdateAuthor)="handleToUpdateAuthor($event)"></app-cmp-authors>
 </ion-content>

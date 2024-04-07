@@ -21,6 +21,7 @@
   ],
   "exclude": [
     "src/test.ts",
-    "src/**/*.spec.ts"
+    "src/**/*.spec.ts",
+    "node_modules/react-native-sqlite-storage/**/*"
   ]
 }

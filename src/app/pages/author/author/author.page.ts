@@ -11,7 +11,7 @@ import { Toast } from '@capacitor/toast';
   templateUrl: './author.page.html',
   styleUrls: ['./author.page.scss'],
 })
-export class AuthorPage implements OnInit {
+export class AuthorPage {
   public authorList: Author[] = [];
   private newAuthor!: Author;
   private authorJson!: AuthorJson;
@@ -21,8 +21,6 @@ export class AuthorPage implements OnInit {
               private modalCtrl: ModalController) {
   }
 
-  ngOnInit() {
-  }
   // Private functions
   /**
    * Cancel

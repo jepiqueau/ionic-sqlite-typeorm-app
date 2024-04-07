@@ -8,6 +8,6 @@
 </ion-header>
 
 <ion-content>
-  <cmp-category id="categories-cmp-category" [inCategory]="updCategory" class="hidden" (outCategoryEvent)="handleOutCategory($event)"></cmp-category>
-  <cmp-categories (toUpdateCategory)="handleToUpdateCategory($event)"></cmp-categories>
+  <app-cmp-category id="categories-cmp-category" [inCategory]="updCategory" class="hidden" (outCategoryEvent)="handleOutCategory($event)"></app-cmp-category>
+  <app-cmp-categories (toUpdateCategory)="handleToUpdateCategory($event)"></app-cmp-categories>
 </ion-content>

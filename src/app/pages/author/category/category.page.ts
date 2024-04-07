@@ -11,7 +11,7 @@ import { Toast } from '@capacitor/toast';
   templateUrl: './category.page.html',
   styleUrls: ['./category.page.scss'],
 })
-export class CategoryPage implements OnInit {
+export class CategoryPage {
   public categoryList: Category[] = [];
   private newCategory!: Category;
   private categoryJson!: CategoryJson;
@@ -21,8 +21,6 @@ export class CategoryPage implements OnInit {
               private modalCtrl: ModalController) {
   }
 
-  ngOnInit() {
-  }
   // Private functions
   /**
    * Cancel

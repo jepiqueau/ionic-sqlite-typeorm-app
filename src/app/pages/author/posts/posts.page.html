@@ -8,6 +8,6 @@
 </ion-header>
 
 <ion-content>
-  <cmp-post id="posts-cmp-post" [inPost]="updPost" class="hidden" (outPostEvent)="handleOutPost($event)"></cmp-post>
-  <cmp-posts id="posts-cmp-posts" (toUpdatePost)="handleToUpdatePost($event)"></cmp-posts>
+  <app-cmp-post id="posts-cmp-post" [inPost]="updPost" class="hidden" (outPostEvent)="handleOutPost($event)"></app-cmp-post>
+  <app-cmp-posts id="posts-cmp-posts" (toUpdatePost)="handleToUpdatePost($event)"></app-cmp-posts>
 </ion-content>

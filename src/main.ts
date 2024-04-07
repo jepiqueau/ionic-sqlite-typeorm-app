@@ -25,7 +25,7 @@ if(platform === "web") {
   window.addEventListener('DOMContentLoaded', async () => {
       const jeepEl = document.createElement("jeep-sqlite");
       document.body.appendChild(jeepEl);
-      jeepEl.autoSave = true;
+//      jeepEl.autoSave = true;
   });
 }
 // Above only required if you want to use a web platform <--

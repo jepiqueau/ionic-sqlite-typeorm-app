@@ -11,9 +11,11 @@ import { CategoryPage } from 'src/app/pages/author/category/category.page';
 import { CategoriesPage } from 'src/app/pages/author/categories/categories.page';
 import { AuthorPage } from 'src/app/pages/author/author/author.page';
 import { AuthorsPage } from 'src/app/pages/author/authors/authors.page';
+import { addIcons } from 'ionicons';
+import { create, list } from 'ionicons/icons';
 
 @Component({
-  selector: 'cmp-post',
+  selector: 'app-cmp-post',
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.scss'],
 })
@@ -66,6 +68,7 @@ export class PostComponent implements OnInit {
   constructor(private authorPostService: AuthorPostService,
     private formBuilder: FormBuilder,
     private modalCtrl: ModalController) {
+      addIcons({create, list});
 
   }
 

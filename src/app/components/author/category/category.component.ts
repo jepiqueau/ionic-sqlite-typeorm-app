@@ -5,7 +5,7 @@ import { IdsSeq, CategoryJson } from '../../../models/authorData';
 import { Category } from 'src/app/entities/author/category';
 
 @Component({
-  selector: 'cmp-category',
+  selector: 'app-cmp-category',
   templateUrl: './category.component.html',
   styleUrls: ['./category.component.scss'],
 })
